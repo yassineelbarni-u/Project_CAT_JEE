@@ -9,18 +9,23 @@ public class produits implements Serializable {
 	private Double prix;
 	private int quantite;
 	
+	
+
 	public produits() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public produits(long id, String designation, Double prix, int quantite) {
-		super();
-		this.id = id;
-		this.designation = designation;
-		this.prix = prix;
-		this.quantite = quantite;
-	}
+
+
+	public produits(String designation, double prix, int quantite) {
+		  super();
+		  this.designation = designation;
+		  this.prix = prix;          // auto-boxing en Double
+		  this.quantite = quantite;
+		}
+
+
 
 	public long getId() {
 		return id;
